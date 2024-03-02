@@ -19,12 +19,14 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="{{'/'}}">Home</a>
         </li>
+
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Cliente
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{'/cadastro-cliente'}}">cadastrar</a></li>
+            <li><a class="dropdown-item" href="{{route('showFormulario-cadastro')}}">cadastrar</a></li>
             <li><a class="dropdown-item" href="#">Pesquisar</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Deletar</a></li>
@@ -32,12 +34,14 @@
         </ul>
         </li>
 
+
+
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Funcionario
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{'/cadastro-funcionario'}}">cadastrar</a></li>
+            <li><a class="dropdown-item" href="{{route('show-Formulario-funcionario')}}">cadastrar</a></li>
             <li><a class="dropdown-item" href="#">Pesquisar</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Deletar</a></li>
@@ -50,7 +54,7 @@
             Quarto
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">cadastrar</a></li>
+            <li><a class="dropdown-item" href="{{route('show-Formulario-quarto')}}">cadastrar</a></li>
             <li><a class="dropdown-item" href="#">Pesquisar</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Deletar</a></li>
@@ -63,7 +67,7 @@
             Reserva
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">cadastrar</a></li>
+            <li><a class="dropdown-item" href="{{route('show-Formulario-reserva')}}">cadastrar</a></li>
             <li><a class="dropdown-item" href="#">Pesquisar</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Deletar</a></li>
