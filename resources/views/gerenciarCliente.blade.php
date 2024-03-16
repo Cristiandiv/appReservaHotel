@@ -33,12 +33,16 @@
         <td>{{$registroClientesLoop->email}}</td>
         <td>
           <a href="">
-            <button type="button" class="btn btn-primary">X</button>
+            <button type="button" class="btn btn-primary">O</button>
           </a>
         </td>
         xx
         <td>
-         xxx
+         <form method="post" action="{{route('apaga-cliente', $registroClientesLoop->id)}}">
+          @method('delete')
+          @csrf
+          <button type="submit" class="btn btn-danger"> X </button
+         </form>
         </td>
       </tr>
     @endforeach

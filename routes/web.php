@@ -22,8 +22,8 @@ Route::get('/cadastro-cliente', [ClienteController::class,'showFormularioCadastr
 Route::post('/cadastro-cliente',[ClienteController::class,'cadCliente'])->name('envia-banco-cliente');
 Route::get('/mostrarGerenciarCliente',[ClienteController::class,'mostrarGerenciarCliente'])->name('mostrar-gerenciar-cliente');
 Route::get('/gerenciar-cliente',[ClienteController::class,'gerenciarCliente'])->name('gerenciar-cliente');
-Route::put('/altera-cliente/{$id}',[ClienteController::class,'alterarClienteBanco'])->name('alterar-cliente');
-Route::delete('/apaga-cliente/{$id}',[ClienteController::class,'destroy'])->name('apaga-cliente');
+Route::put('/altera-cliente/{id}',[ClienteController::class,'alterarClienteBanco'])->name('alterar-cliente');
+Route::delete('/apaga-cliente/{id}',[ClienteController::class,'destroy'])->name('apaga-cliente');
 
 
 Route::get('/cadastro-funcionario', [FuncionarioController::class,'showFormularioFuncionario'])->name('show-Formulario-funcionario');
