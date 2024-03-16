@@ -13,8 +13,8 @@
   <div class="col-md-12">
   
     <label for="inputTipo4" name="tipo" class="form-label">Tipo: </label>
-    <select class="form-select" aria-label="Default select example">
-  <option selected>Open this select menu</option>
+    <select class="form-select" aria-label="Default select example" name="tipo">
+  <option selected disabled></option>
   <option value="Classe A+">Classe A+</option>
   <option value="Comercial">Comercial</option>
   <option value="Suite">Suite</option>

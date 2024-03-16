@@ -22,5 +22,8 @@ class FuncionarioController extends Controller
 
         return view('home');
     }
-
+    
+    public function gerenciarFuncionario(Request $request){
+        return view('gerenciarFuncionario');
+    }
 }

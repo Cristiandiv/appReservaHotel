@@ -17,7 +17,7 @@ return new class extends Migration
             $table->integer('idfuncionario');
             $table->integer('idquarto');
             $table->enum('situacao', ['Pago','Pendente']);
-            $table->double('valortotal', 8,2);
+            $table->decimal('valortotal', 8,2);
             $table->date('dataentrada');
             $table->date('datasaida');
         });

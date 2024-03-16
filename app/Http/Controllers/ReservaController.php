@@ -14,17 +14,22 @@ class ReservaController extends Controller
 
     public function cadReserva(Request $request){
         $dadosValidos = $request->validate([
-            'idcliente' => 'string|required',
-            'idfuncionario' => 'string|required',
-            'idquarto' => 'string|required',
+            'idcliente' => 'integer|required',
+            'idfuncionario' => 'integer|required',
+            'idquarto' => 'integer|required',
             'situacao'=> 'string|required',
-            'dataEntrada'=> 'string|required',
-            'dataSaida'=> 'string|required'
+            'valortotal' => 'numeric|required',
+            'dataEntrada'=> 'date|required',
+            'dataSaida'=> 'date|required'
         ]);
 
         Reserva::create($dadosValidos);
 
         return Redirect::route('home');
+    }
+
+    public function gerenciarReserva(Request $request){
+        return view('gerenciarReserva');
     }
 }
 

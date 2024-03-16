@@ -8,6 +8,11 @@ use App\Models\Quarto;
 
 class QuartoController extends Controller
 {
+    public function showHome(){
+        return view('home');
+    }
+
+
     public function showFormularioQuarto(Request $request){
         return view('escolherQuarto');
     }
@@ -16,11 +21,15 @@ class QuartoController extends Controller
         $dadosValidos = $request->validate([
             'numero' => 'integer|required',
             'tipo' => 'string|required',
-            'valor' => 'decimal:8,2|required'
+            'valor' => 'numeric|required'
         ]);
 
         Quarto::create($dadosValidos);
 
-        return Redirect::route('home');
+        return view('home');
+    }
+
+    public function gerenciarQuarto(Request $request){
+        return view('gerenciarQuarto');
     }
 }

@@ -26,7 +26,8 @@
             Cliente
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{route('showFormulario-cadastro')}}">cadastrar</a></li>
+            <li><a class="dropdown-item" href="{{route('showFormulario-cadastro')}}">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="{{route('gerenciar-cliente')}}">Gerenciar</a></li>
             <li><a class="dropdown-item" href="#">Pesquisar</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Deletar</a></li>
@@ -41,7 +42,8 @@
             Funcionario
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{route('show-Formulario-funcionario')}}">cadastrar</a></li>
+            <li><a class="dropdown-item" href="{{route('show-Formulario-funcionario')}}">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="{{'/gerenciarFuncionario'}}">Gerenciar</a></li>
             <li><a class="dropdown-item" href="#">Pesquisar</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Deletar</a></li>
@@ -54,7 +56,8 @@
             Quarto
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{route('show-Formulario-quarto')}}">cadastrar</a></li>
+            <li><a class="dropdown-item" href="{{route('show-Formulario-quarto')}}">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="{{'/gerenciarQuarto'}}">Gerenciar</a></li>
             <li><a class="dropdown-item" href="#">Pesquisar</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Deletar</a></li>
@@ -67,7 +70,8 @@
             Reserva
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="{{route('show-Formulario-reserva')}}">cadastrar</a></li>
+            <li><a class="dropdown-item" href="{{route('show-Formulario-reserva')}}">Cadastrar</a></li>
+            <li><a class="dropdown-item" href="{{'/gerenciarReserva'}}">Gerenciar</a></li>
             <li><a class="dropdown-item" href="#">Pesquisar</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Deletar</a></li>
