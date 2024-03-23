@@ -23,7 +23,46 @@ class FuncionarioController extends Controller
         return view('home');
     }
     
-    public function gerenciarFuncionario(Request $request){
-        return view('gerenciarFuncionario');
+
+    //funcao para mostrar os dados gerenciados para nos
+    public function mostrarGerenciarFuncionario(Cliente $id){
+
+        return view('xxxxx',['registroFuncionarios' => $id]);
     }
+
+    //funcao para gerenciar os dados
+    public function gerenciarFuncionario (Request $request){
+
+        $dadosFunci = Funcionario::query();
+        $dadosFunci->when($request->nome,function($query,$valor){
+            $query->where('nome','like','%'.$valor.'%');
+        });
+        $dadosFunci = $dadosFunci->get();
+
+        return view('gerenciarFuncionario',['registroFuncionarios' => $dadosFunci]);
+    }
+
+    //apagar dados salvos
+    public function destroy(Funcionario $id){
+        
+        $id->delete();
+        return Redirect::route('home');
+    }
+
+    //alterar dados registrados do cliente
+    public function alterarFuncionarioBanco(Funcionario $id,Request $request){
+
+        //o request e uma variavel que contem os dados cadastrados no formulario por post
+        //ele ira validar se esses dados do validardados existe, so assim para eles serem salvos
+        $dadosValidos = $request->validate([
+            'nome' => 'string|required',
+            'funcao' => 'string|required'
+        ]);
+
+        //fill serve para organizar os dados recadastrados
+        $id->fill($dadosValidos);
+        //salvar dados 
+        $id->save();
+    }
+
 }

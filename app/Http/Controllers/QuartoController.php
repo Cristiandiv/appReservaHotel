@@ -29,7 +29,47 @@ class QuartoController extends Controller
         return view('home');
     }
 
-    public function gerenciarQuarto(Request $request){
-        return view('gerenciarQuarto');
+    //funcao para mostrar os dados gerenciados para nos
+    public function mostrarGerenciarQuarto(Cliente $id){
+
+        return view('xxxxx',['registroQuartos' => $id]);
     }
+
+    //funcao para gerenciar os dados
+    public function gerenciarQuarto (Request $request){
+
+        $dadosQuarto = Quarto::query();
+        $dadosQuarto->when($request->nome,function($query,$valor){
+            $query->where('nome','like','%'.$valor.'%');
+        });
+        $dadosQuarto = $dadosQuarto->get();
+
+        return view('gerenciarQuarto',['registroQuartos' => $dadosQuarto]);
+    }
+
+    //apagar dados salvos
+    public function destroy(Quarto $id){
+        
+        $id->delete();
+        return Redirect::route('home');
+    }
+
+    //alterar dados registrados do cliente
+    public function alterarQuartoBanco(Quarto $id,Request $request){
+
+        //o request e uma variavel que contem os dados cadastrados no formulario por post
+        //ele ira validar se esses dados do validardados existe, so assim para eles serem salvos
+        $dadosValidos = $request->validate([
+            'numero' => 'integer|required',
+            'tipo' => 'string|required',
+            'valor' => 'numeric|required'
+        ]);
+
+        //fill serve para organizar os dados recadastrados
+        $id->fill($dadosValidos);
+        //salvar dados 
+        $id->save();
+    }
+
 }
+

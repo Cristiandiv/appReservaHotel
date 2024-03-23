@@ -41,7 +41,7 @@
          <form method="post" action="{{route('apaga-cliente', $registroClientesLoop->id)}}">
           @method('delete')
           @csrf
-          <button type="submit" class="btn btn-danger"> X </button
+          <button type="submit" class="btn btn-danger"> X </button>
          </form>
         </td>
       </tr>

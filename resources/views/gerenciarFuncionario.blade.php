@@ -25,22 +25,28 @@
       </tr>
     </thead>
     <tbody>
-     
+    
+    @foreach($registroFuncionarios as $registroFunciLoop)
+
       <tr>
-        <th scope="row">01</th>
-        <td>119897-999</td>
-        <td>Samsung</td>
+      <th scope="row">{{$registroFunciLoop->id}}</th>
+        <td>{{$registroFunciLoop->nome}}</td>
+        <td>{{$registroFunciLoop->funcao}}</td>
         <td>
           <a href="">
-            <button type="button" class="btn btn-primary">X</button>
+            <button type="button" class="btn btn-primary">O</button>
           </a>
         </td>
         xx
         <td>
-         xxx
+        <form method="post" action="{{route('apaga-funcionario', $registroFunciLoop->id)}}">
+          @method('delete')
+          @csrf
+          <button type="submit" class="btn btn-danger"> X </button>
+         </form>
         </td>
       </tr>
-   
+    @endforeach
     </tbody>
   </table>
 </section>
