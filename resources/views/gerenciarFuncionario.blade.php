@@ -37,7 +37,6 @@
             <button type="button" class="btn btn-primary">O</button>
           </a>
         </td>
-        xx
         <td>
         <form method="post" action="{{route('apaga-funcionario', $registroFunciLoop->id)}}">
           @method('delete')
