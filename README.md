@@ -1,3 +1,24 @@
+Telas do Site
+
+1. Clientes
+- Cadastro
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/332a35cc-3878-47f9-9a00-416487e06c0e)
+- Lista
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/1bf95655-7651-454e-877f-0bf934eeaa5b)
+- Alterar
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/159f286b-046c-4b2e-ab15-82b38f22dde9)
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/ac32b4f5-1df2-42af-aa2b-58ce200b3625)
+- Buscar
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/fc52b543-514e-41f4-a5ea-85bc93167f15)
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/953677ab-1668-4ccf-8d8a-a99d33aab231)
+
+2. Funcionario
+
+
+4. Quartos
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
