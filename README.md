@@ -13,10 +13,23 @@ Telas do Site
 ![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/953677ab-1668-4ccf-8d8a-a99d33aab231)
 
 2. Funcionario
+- Cadastro
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/93330a94-ae6a-4ca2-a544-f8bba1eb96b7)
+- Lista
+- ![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/f12fe502-ca26-43e0-9670-e338fd208836)
+- Alterar
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/cc25192f-d764-47f1-b372-7c7bcb5bdd34)
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/2427c823-44a6-493f-aa13-cdf6d42555d9)
+- Buscar
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/3c5dcfa6-921d-4913-8c3b-668f7f0f1a6b)
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/2b322b51-2c49-426b-a223-3fe30ad011ae)
 
 
-4. Quartos
-
+3. Quartos
+- Cadastro
+- Lista
+- Alterar
+- Buscar
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
