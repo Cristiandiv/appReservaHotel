@@ -29,11 +29,14 @@ Telas do Site
 - Cadastro
 ![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/a21412bb-d83c-4355-92f7-c0cab12d1460)
 - Lista
+
 ![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/9d09d663-04bb-489d-a1b8-ed2af3801d9a)
 - Alterar
+
 ![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/5ea101ec-bdba-417c-a833-f9153ecf9ef8)
 ![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/19a60929-0280-4369-b8a8-ff83b6748c64)
 - Buscar
+
 ![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/27df3295-3a0c-47e8-a20c-15b2d842fb1f)
 ![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/bc3596d0-ff87-4a6d-ac0e-7962036a42d5)
 
