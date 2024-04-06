@@ -3,7 +3,7 @@
 <section class="container m-5">
   <div class="container m-5">
     <h1 class="text-center">Gerenciar Dados do Funcionário</h1>
-    <form >
+    <form method='get' action="{{route('gerenciar-funcionario')}}">
       <div class="row center">
         <div class="col">
           <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite o Nome do Funcionário" aria-label="Primeiro Nome">
@@ -33,7 +33,7 @@
         <td>{{$registroFunciLoop->nome}}</td>
         <td>{{$registroFunciLoop->funcao}}</td>
         <td>
-          <a href="">
+          <a href="{{route('mostrar-funcionario', $registroFunciLoop->id)}}">
             <button type="button" class="btn btn-primary">O</button>
           </a>
         </td>

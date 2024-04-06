@@ -25,9 +25,9 @@ class FuncionarioController extends Controller
     
 
     //funcao para mostrar os dados gerenciados para nos
-    public function mostrarGerenciarFuncionario(Cliente $id){
+    public function mostrarGerenciarFuncionarioId(Funcionario $id){
 
-        return view('xxxxx',['registroFuncionarios' => $id]);
+        return view('formularioAlterarFuncionario',['registroFuncionarios' => $id]);
     }
 
     //funcao para gerenciar os dados
@@ -63,6 +63,8 @@ class FuncionarioController extends Controller
         $id->fill($dadosValidos);
         //salvar dados 
         $id->save();
+
+        return Redirect::route('home');
     }
 
 }

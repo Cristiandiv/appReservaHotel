@@ -30,17 +30,17 @@ class QuartoController extends Controller
     }
 
     //funcao para mostrar os dados gerenciados para nos
-    public function mostrarGerenciarQuarto(Cliente $id){
+    public function mostrarGerenciarQuartoId(Quarto $id){
 
-        return view('xxxxx',['registroQuartos' => $id]);
+        return view('formularioAlterarQuarto',['registroQuartos' => $id]);
     }
 
     //funcao para gerenciar os dados
     public function gerenciarQuarto (Request $request){
 
         $dadosQuarto = Quarto::query();
-        $dadosQuarto->when($request->nome,function($query,$valor){
-            $query->where('nome','like','%'.$valor.'%');
+        $dadosQuarto->when($request->numero,function($query,$valor){
+            $query->where('numero','like','%'.$valor.'%');
         });
         $dadosQuarto = $dadosQuarto->get();
 
@@ -69,6 +69,9 @@ class QuartoController extends Controller
         $id->fill($dadosValidos);
         //salvar dados 
         $id->save();
+
+        return Redirect::route('home');
+
     }
 
 }

@@ -32,7 +32,7 @@
         <td>{{$registroClientesLoop->nome}}</td>
         <td>{{$registroClientesLoop->email}}</td>
         <td>
-          <a href="">
+          <a href="{{route('mostrar-cliente', $registroClientesLoop->id)}}">
             <button type="button" class="btn btn-primary">O</button>
           </a>
         </td>

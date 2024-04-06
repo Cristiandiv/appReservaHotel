@@ -33,9 +33,9 @@ class ClienteController extends Controller
     }
 
     //funcao para mostrar os dados gerenciados para nos
-    public function mostrarGerenciarCliente(Cliente $id){
+    public function mostrarGerenciarClienteId (Cliente $id){
 
-        return view('xxxxx',['registroClientes' => $id]);
+        return view('formularioAlterarCliente',['registroClientes' => $id]);
     }
 
     //funcao para gerenciar os dados
@@ -72,5 +72,6 @@ class ClienteController extends Controller
         $id->fill($dadosValidos);
         //salvar dados 
         $id->save();
+        return Redirect::route('home');
     }
 }

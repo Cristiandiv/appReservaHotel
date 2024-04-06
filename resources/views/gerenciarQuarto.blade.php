@@ -3,10 +3,10 @@
 <section class="container m-5">
   <div class="container m-5">
     <h1 class="text-center">Gerenciar Dados do Quarto</h1>
-    <form >
+    <form method='get' action="{{route('gerenciar-quarto')}}">
       <div class="row center">
         <div class="col">
-          <input type="number" id="nome" name="numeroQuarto" class="form-control" placeholder="Digite o Número do Quarto" aria-label="Número">
+          <input type="number" id="nome" name="numero" class="form-control" placeholder="Digite o Número do Quarto" aria-label="Número">
         </div>
         <div class="col">
           <button type="submit" class="btn btn-info">Buscar</button>
@@ -36,11 +36,10 @@
         <td>{{$registroQuartosLoop->tipo}}</td>
         <td>{{$registroQuartosLoop->valor}}</td>
         <td>
-          <a href="">
+          <a href="{{route('mostrar-quarto', $registroQuartosLoop->id)}}">
             <button type="button" class="btn btn-primary">O</button>
           </a>
         </td>
-        xx
         <td>
         <form method="post" action="{{route('apaga-quarto', $registroQuartosLoop->id)}}">
           @method('delete')
