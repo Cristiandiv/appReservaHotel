@@ -1,3 +1,46 @@
+Telas do Site
+
+1. CLIENTES
+- Cadastro
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/332a35cc-3878-47f9-9a00-416487e06c0e)
+- Lista
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/1bf95655-7651-454e-877f-0bf934eeaa5b)
+- Alterar
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/159f286b-046c-4b2e-ab15-82b38f22dde9)
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/ac32b4f5-1df2-42af-aa2b-58ce200b3625)
+- Buscar
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/fc52b543-514e-41f4-a5ea-85bc93167f15)
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/953677ab-1668-4ccf-8d8a-a99d33aab231)
+
+2. FUNCIONARIOS
+- Cadastro
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/93330a94-ae6a-4ca2-a544-f8bba1eb96b7)
+- Lista
+- ![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/f12fe502-ca26-43e0-9670-e338fd208836)
+- Alterar
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/cc25192f-d764-47f1-b372-7c7bcb5bdd34)
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/2427c823-44a6-493f-aa13-cdf6d42555d9)
+- Buscar
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/3c5dcfa6-921d-4913-8c3b-668f7f0f1a6b)
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/2b322b51-2c49-426b-a223-3fe30ad011ae)
+
+
+3. QUARTOS
+- Cadastro
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/a21412bb-d83c-4355-92f7-c0cab12d1460)
+- Lista
+
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/9d09d663-04bb-489d-a1b8-ed2af3801d9a)
+- Alterar
+
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/5ea101ec-bdba-417c-a833-f9153ecf9ef8)
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/19a60929-0280-4369-b8a8-ff83b6748c64)
+- Buscar
+
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/27df3295-3a0c-47e8-a20c-15b2d842fb1f)
+![image](https://github.com/Cristiandiv/appReservaHotel/assets/132522844/bc3596d0-ff87-4a6d-ac0e-7962036a42d5)
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
